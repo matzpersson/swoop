@@ -2,8 +2,7 @@
 
 Single Page App connecting to a basic php api utilising CDN based libraries, Jquery and Javascripts. No frameworks.
 
-
-Includes docker file and shell script for launching the docker image. Script  creates a private subnet to communicate with seperate mysql/pgsql database container if applicable. The Docker file installs php extension for mysql/pgsql depedent on the Dockerfile you choose.
+Includes docker file for launching the docker image. Script  creates a private subnet to communicate with seperate mysqldatabase container.
 
 ## Install instructions on your own Webserver
 
@@ -21,7 +20,7 @@ Includes docker file and shell script for launching the docker image. Script  cr
  * Run ```docker-compose build```
  * Run ```docker-compose up```
 
-## Application features
+## Basic Application features
 * PHP API endpoint in Routes for consumption by Ajax XHR connections.
 * Jquery/Javascript front-end only. No frameworks.
 * Using MorrisJs charts.
