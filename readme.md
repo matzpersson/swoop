@@ -22,8 +22,8 @@ Includes docker file and shell script for launching the docker image. Script  cr
  * Run ```docker-compose up```
 
 ## Application features
-* PHP API endpoint in ROutes
-* Jquery/Javascript front-end only. No frameworks
+* PHP API endpoint in Routes for Ajax connections
+* Jquery/Javascript front-end only. No frameworks.
 * PHP Objects, class extensions and PDO connection for db
 * Bootstrap 4 styling
 * Responsive Page
