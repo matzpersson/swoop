@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  webserver:
+    container_name: webserver
+    build: .
+    ports:
+      - '8081:80'
+    volumes:
+      - ./html/:/var/www/html
+      - ./apache.conf:/etc/apache2/sites-available/000-default.conf
+    depends_on:
+      - db
+  db:
+    container_name: mysql_db
+    image: mysql:5.7
+    volumes:
+      - "./data:/var/lib/mysql"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: swoop
+      MYSQL_USER: swoop
+      MYSQL_PASSWORD: swoop
+    ports:
+      - "6033:3306"
