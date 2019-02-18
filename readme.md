@@ -2,7 +2,7 @@
 
 Single Page App connecting to a basic php api utilising CDN based libraries, Jquery and Javascripts. No frameworks.
 
-Includes docker file for launching the docker image. Script  creates a private subnet to communicate with seperate mysqldatabase container.
+Includes docker file for launching the docker image. Script  creates a private subnet to communicate with seperate mysql database container.
 
 ## Install instructions on your own Webserver
 
